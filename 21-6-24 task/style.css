@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+}
+header .top{
+    justify-content: space-between;
+    width: 100%;
+}
+header .nav a{
+    color: black;
+    flex-shrink: 0;
+}
+.nav i{
+    font-size: 20px;
+    padding: 0 5px;
+    color: rgb(242, 182, 70);
+}
+header .right{
+    padding: 5px;
+}
+header .right .s-media{
+    margin: 0 15px;
+ }
+header .right .s-media span{
+   padding: 0 5px;
+   font-size: 20px;
+}
+header .right .support{
+    background-image: url('https://www.shutterstock.com/shutterstock/photos/1440282155/display_1500/stock-photo-seamless-pink-and-white-background-checkered-pattern-or-grid-texture-for-web-design-desktop-1440282155.jpg');
+    background-size: cover;
+    padding: 10px;
+    display: flex;
+    flex-shrink: 0;
+}
+header .right .support i{
+    font-size: 20px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+header .right .support .toggle{
+   display: none;
+}
+#main{
+    width: 100%;
+}
+#main .navbar-brand{
+    color: black;
+    font-size: 1.5rem;
+}
+#main .nav-item{
+    list-style: none;
+}
+#main .nav-link{
+    color: black;
+
+}
+#main .search{
+    display: flex;
+    align-items: center;
+}
+#main .search span{
+    font-size: 25px;
+    padding:0 10px;
+}
+#main form{
+    position: relative;
+}
+#main form input{
+    width: 130px;
+}
+#main form .glass{
+    position: absolute;
+    right: 80px;
+    font-size: 18px;
+    top: 5px;
+    color: rgba(0, 0, 0, 0.325);
+}
+#main form .btn{
+    background-color: rgb(242, 182, 70);
+    margin: 0 5px;
+}
+#main .search .side-menu{
+    display: none;
+}
+#cart{
+    width: 100%;
+    height: 40vh;
+    background-image: url('https://media.architecturaldigest.com/photos/623365d6dbf1b09e519a6cad/16:9/w_2319,h_1304,c_limit/02d%20Living%20Room%20-%20Hero%20Shot%20West.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#cart .content{
+    width: 100%;
+    height: 40vh;
+    background-color: rgba(0, 0, 0, 0.507);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+#cart .content h6{
+    color: rgb(242, 182, 70);
+}
+.input-group input::placeholder{
+    color: rgba(0, 0, 0, 0.363);
+    font-size: 17px;
+}
+.container #row{
+    margin-top: 40px;
+}
+.container .row{
+    margin: 0px 0 20px 0;
+}
+.container .card{
+    background-color: #FDF2E9;
+    border: 2px solid #CD6155;
+    border-bottom: none;
+    margin-bottom: 10px;
+}
+
+.product .item{
+    width: 30%;
+}
+.product .item img{
+    width: 50px;
+}
+.container .card .pay{
+    margin: 20px 0;
+    padding: 8px 2px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.container .card .pay h5,i{
+    padding: 0 10px;
+}
+.container .card .p1{
+    border-top: 3px solid rgb(242, 182, 70);
+    border-left: 3px solid rgba(242, 182, 70, 0.5);
+    border-right: 3px solid rgba(242, 182, 70, 0.5);
+    border-bottom: none;
+
+}
+.container .card .p2{
+    border-top: 3px solid black;
+    border-left: 3px solid rgba(0, 0, 0, 0.480);
+    border-right: 3px solid rgba(0, 0, 0, 0.480);
+    border-bottom:3px solid rgba(0, 0, 0, 0.268);
+
+}
+.container .card .p3{
+    border-top:3px solid rgba(0, 0, 0, 0.268);
+    border-left: 3px solid rgba(0, 0, 0, 0.480);
+    border-right: 3px solid rgba(0, 0, 0, 0.480);
+    border-bottom: 3px solid black;
+
+}
+.container .card .btn{
+    background-color:rgb(242, 182, 70) ;
+    width: 100%;
+    padding: 10px 0;
+}
+footer{
+    width: 100%;
+    height: auto;
+    background-image: url('https://wallpaperbat.com/img/779710-dark-black-wallpaper.jpg');
+    background-size: cover;
+    color: white;
+    padding: 20px 0;
+}
+footer .links ul li{
+    margin: 10px 0px;
+}
+footer .post{
+    margin: 20px 0;
+}
+footer .post img{
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+footer .post .text{
+}
