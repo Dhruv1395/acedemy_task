@@ -1,0 +1,149 @@
+/* / Desktop 1600px   / */
+@media (max-width: 1850px) {}
+
+/* / Desktop 1440px   / */
+@media (max-width: 1440px) {}
+
+/* / Desktop 1280px   / */
+@media (max-width: 1366px) {}
+
+/* / iPad 1024px   / */
+@media (max-width: 1200px) {
+    #main ul{
+        display: none;
+    }
+    #menutoggle{
+        display:block;
+        font-size: 25px;
+        padding: 0 20px;
+    }
+    #city .card{
+        width: 18rem !important;
+    }
+    #discover .card{
+        width: 18rem !important;
+    }
+    #news .card{
+        width: 18rem !important;
+    }
+    footer .s-channels .content{
+        text-align: center;
+        flex-direction: column;
+     }
+     footer .s-channels .content button{
+       
+     }
+}
+
+/* / iPad 991px   / */
+@media (max-width: 991px) {
+    #city .card{
+        width: 14rem !important;
+    }
+    #discover .card{
+        width: 14rem !important;
+    }
+    #city .latest .content{
+        width: 100%;
+    }
+    #news .card{
+        width: 14rem !important;
+    }
+}
+
+/* / Iphone 767px  / */
+@media (max-width: 767px) {
+    #city .card{
+        width: 16rem !important;
+        margin-bottom: 15px;
+       
+    }
+    #city .card-body{
+        height: 10% !important;
+    }
+    #discover .card{
+        width: 16rem !important;
+        margin-bottom: 15px;
+       
+    }
+    #news .card{
+        width: 16rem !important;
+        margin-bottom: 15px;
+
+    }
+    #city .latest .content{
+        flex-direction: column;
+        width: 100%;
+    }
+    #city .latest .content img{
+        margin: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    #home .bottom{
+        overflow-y: scroll;
+    }
+    
+}
+@media (max-width:575px) {
+    #city .card{
+        width: 21rem !important;
+        margin-bottom: 15px;
+       
+    }
+    #discover .card{
+        width: 21rem !important;
+        margin-bottom: 15px;
+    }
+    #news .card{
+        width: 21rem !important;
+        margin-bottom: 15px;
+    }
+    
+    #gallery .card img{
+        width:70%;
+        margin: 0 auto;
+    }
+}
+/* / Iphone 567px   / */
+@media (max-width: 529px) {
+    #first .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #main  #search{
+        display: none !important;
+    }
+}
+
+@media (max-width: 472px) {
+    #first .left-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* / Mobile 375px   / */
+@media (max-width: 375px) {}
+
+/* / Mobile 360px   / */
+@media (max-width: 360px) {
+    #city .card{
+        width: 17rem !important;
+        z-index: 0;
+    }
+    #discover .card{
+        width: 17rem !important;
+        z-index: 0;
+    }
+    #news .card{
+        width: 18rem !important;
+    }
+}
+
+/* / Mobile 320px   / */
+@media (max-width: 320px) {}

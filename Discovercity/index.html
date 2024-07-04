@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link src="logo.webp" type="logo"> -->
+  <link rel="icon" href="logo.webp" type="image/icon type">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaquery.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/6d37effa6c.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar" id="first">
+      <div class="container">
+        <div class="left-content d-flex">
+          <h6>THE OFICIAL WEBSITE OF THE CITY</h6>
+          <h6>MONDAY-FRIDAY 8am-5pm</h6>
+        </div>
+
+        <span class="text-end"><i class="fa-solid fa-user"></i> Login</span>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-light " id="main">
+      <div class="container">
+        <div class="logo d-flex align-middle">
+          <img src="logo.webp" alt="">
+          <div class="logo-txt">
+            <span>DISCOVER</span>
+            <span>THE</span>
+            <span>CITY</span>
+          </div>
+
+        </div>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item" id="dropdown">
+            <a class="nav-link non-active" href="">Features</a>
+            <ul class="d-menu" id="dmenu">
+              <table class="table table-hover" style="color: white;">
+                <tr>
+                  <td>></td>
+                  <td>Short code</td>
+                </tr>
+                <tr>
+                  <td>></td>
+                  <td>Typography</td>
+                </tr>
+                <tr>
+                  <td>></td>
+                  <td>Blog</td>
+                </tr>
+                <tr>
+                  <td>></td>
+                  <td>404</td>
+                </tr>
+                <tr>
+                  <td>></td>
+                  <td>Pages</td>
+                </tr>
+              </table>
+
+            </ul>
+          </li>
+          <li class="nav-item " id="dropdown2">
+            <a class="nav-link non-active" href="#">Government</a>
+            <ul class="d-menu" id="dmenu2">
+              <table class="table table-hover" style="color: white;">
+                <tr>
+                  <td>></td>
+                  <td>City Halls</td>
+                </tr>
+                <tr>
+                  <td>></td>
+                  <td>Departments</td>
+                </tr>
+                <tr>
+                  <td>></td>
+                  <td>Government city council</td>
+                </tr>
+              </table>
+            </ul>
+          </li>
+          <li class="nav-item " id="dropdown3">
+            <a class="nav-link non-active" href="#">Community</a>
+            <ul class="d-menu" id="dmenu3">
+              <table class="table table-hover" style="color: white;">
+                <tr>
+                  <td>></td>
+                  <td>Community</td>
+                </tr>
+                <tr>
+                  <td>></td>
+                  <td>CityGov Message Board</td>
+                </tr>
+              </table>
+            </ul>
+          </li>
+          <li class="nav-item " id="dropdown4">
+            <a class="nav-link non-active" href="#">Services</a>
+            <ul class="d-menu" id="dmenu4">
+              <table class="table table-hover" style="color: white;">
+                <tr>
+                  <td>></td>
+                  <td>Transportation</td>
+                </tr>
+                <tr>
+                  <td>></td>
+                  <td>Sanitation & Recycling</td>
+                </tr>
+              </table>
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link non-active" href="#">Relax</a>
+          </li>
+          <li class="nav-item " id="dropdown5">
+            <a class="nav-link non-active" href="#">About city</a>
+            <ul class="d-menu" id="dmenu5">
+              <table class="table table-hover" style="color: white;">
+                <tr>
+                  <td>></td>
+                  <td>About city</td>
+                </tr>
+                <tr>
+                  <td>></td>
+                  <td>Donations</td>
+                </tr>
+                <tr>
+                  <td>></td>
+                  <td>Gallery</td>
+                </tr>
+                <tr>
+                  <td>></td>
+                  <td>Contacts</td>
+                </tr>
+
+              </table>
+
+            </ul>
+          </li>
+        </ul>
+        <div class="nav-right d-flex">
+          <form class="d-flex" id="search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input class="form-control me-0" type="search" aria-label="Search">
+          </form>
+          <div id="menutoggle">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="sidenav">
+      <div class="close">
+        <span id="mclose"><i class="fa-solid fa-xmark"></i></span>
+      </div>
+      <ul>
+        <li>Home</li>
+        <li>Features</li>
+        <li>Government</li>
+        <li>Community</li>
+        <li>Services</li>
+        <li>Relax</li>
+        <li>About city</li>
+      </ul>
+    </div>
+  </header>
+  <section id="home">
+    <div class="content">
+      <h1>DISCOVER THE CITY</h1>
+      <div id="rightbox">
+        <div class="right-box">
+          <div class="box first">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="box sec">
+            <i class="fa-solid fa-image"></i>
+          </div>
+          <div class="box third">
+            <i class="ri-window-line"></i>
+          </div>
+        </div>
+      </div>
+
+      <h3>Where you are always welcome</h3>
+      <div class="bottom">
+        <div class="container">
+          <div class="row">
+            <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-center">
+              <div class="info">
+                <h1>891,85</h1>
+                <p>KM<sup>2</sup>,SQUARE</p>
+              </div>
+            </div>
+            <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-center">
+              <div class="info">
+                <h1><i class="fa-solid fa-cloud"></i></h1>
+                <P>WEATHER</P>
+              </div>
+            </div>
+            <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-center">
+              <div class="info">
+                <h1>1170</h1>
+                <P>YEAR OF FOUNDATION</P>
+              </div>
+            </div>
+            <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex justify-content-center">
+              <div class="info">
+                <h1>1,745,550</h1>
+                <p>POPULATION</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="city">
+    <div class="up-page" id="pageup">
+      <span><a href="#home"><i class="fa-solid fa-arrow-up"></i></a></span>
+    </div>
+    <div class="container">
+      <div class="tiTle">
+        <h4>welcome There!</h4>
+        <div class="underline"></div>
+        <h1>The Most Exciting City of Northeast!</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-lg-4">
+          <div class="card shadow" style="width: 21rem;">
+            <img src="https://citygov.ancorathemes.com/wp-content/uploads/2016/01/img1-1-740x460.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Living</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#">READ MORE <i class="fa-solid fa-greater-than"></i></a>
+              <div class="trans-box"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-lg-4">
+          <div class="card shadow" style="width: 21rem;">
+            <img src="https://citygov.ancorathemes.com/wp-content/uploads/2016/01/img3-740x460.jpg" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Government</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#">READ MORE <i class="fa-solid fa-greater-than"></i></a>
+              <div class="trans-box"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-lg-4">
+          <div class="card shadow" style="width: 21rem;">
+            <img src="https://citygov.ancorathemes.com/wp-content/uploads/2016/01/img2-1-740x460.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Studying</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#">READ MORE <i class="fa-solid fa-greater-than"></i></a>
+              <div class="trans-box"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <button>BROWSE MORE CATEGORIES</button>
+      </div>
+    </div>
+    <div class="latest">
+      <div class="container">
+        <h6 class="title">LATEST FROM THE GOVERNOR</h6>
+        <div class="content">
+          <img src="https://citygov.ancorathemes.com/wp-content/uploads/2016/01/chat-3-240x240.jpg" alt="">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit cumque labore, doloremque odit a
+            quis, nihil sed ut vel porro tenetur voluptatem. Temporibus vero harum necessitatibus laudantium, architecto
+            natus accusamus, magnam eveniet nisi ab sint cum nam voluptatem tenetur quibusdam?</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section id="discover">
+    <div class="container">
+      <h1 class="title text-center">DISCOVER THE OPPORTUNITIES</h1>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-lg-4">
+          <div class="card shadow" style="width: 21rem;">
+            <img src="https://citygov.ancorathemes.com/wp-content/uploads/2016/01/img4-740x584.jpg" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Entertainment</h5>
+              <p class="card-text">Discover the natural beauty & resorces of City’s outdoors</p>
+              <a href="#">MORE INFO <i class="fa-solid fa-greater-than"></i></a>
+              <div class="trans-box"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-lg-4">
+          <div class="card shadow" style="width: 21rem;">
+            <img src="https://citygov.ancorathemes.com/wp-content/uploads/2016/01/img5-740x584.jpg" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Advantures</h5>
+              <p class="card-text">Explore the adventures awaiting for you in the City’s Parks</p>
+              <a href="#">MORE INFO <i class="fa-solid fa-greater-than"></i></a>
+              <div class="trans-box"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-lg-4">
+          <div class="card shadow" style="width: 21rem;">
+            <img src="https://citygov.ancorathemes.com/wp-content/uploads/2016/01/img6-740x584.jpg" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Natures</h5>
+              <p class="card-text">Road trips, music, festivals & fun await you in the City</p>
+              <a href="#">MORE INFO <i class="fa-solid fa-greater-than"></i></a>
+              <div class="trans-box"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h6 class="text-center"><a href="#" class="more-programs">MORE Programs & initiatives <i
+            class="fa-solid fa-greater-than"></i></a>
+      </h6>
+    </div>
+  </section>
+  <section id="service">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-5">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="card-title">SERVICES FOR
+                CITIZENS</h1>
+              <div class="hover-btn d-flex">
+                <div class="btn-1">
+                  <span>Serving Our Citizens</span>
+                  <div class="trans"></div>
+                </div>
+                <div class="btn-2">
+                  <span> Making Buisness Easier</span>
+                  <div class="trans"></div>
+                </div>
+              </div>
+              <div class="link-part d-flex">
+                <div class="links">
+                  <ul>
+                    <li><span>></span> Local Facts</li>
+                    <li><span>></span> Our History</li>
+                    <li><span>></span> City Jobs</li>
+                    <li><span>></span> Health & Social Services</li>
+                    <li><span>></span> Moving to the City</li>
+                  </ul>
+                </div>
+                <div class="links">
+                  <ul>
+                    <li><span>></span> Professional Licenses</li>
+                    <li><span>></span> Senior Citizen Resources</li>
+                    <li><span>></span> Voting Elections</li>
+                    <li><span>></span> Weather & Road Conditions</li>
+                  </ul>
+                </div>
+              </div>
+              <a href="">MORE INFO ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-7">
+          <div class="img"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="news">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="title">CITY NEWS
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-lg-4">
+          <div class="card shadow" style="width: 21rem;">
+            <img src="https://citygov.ancorathemes.com/wp-content/uploads/2016/01/img_news1-370x190.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="time d-flex">
+                <h5><span class="badge " id="month"></span></h5>
+                <h5><span class="badge" id="date"></span></h5>
+                <h5><span class="badge" id="year"></span></h5>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#">READ MORE <i class="fa-solid fa-greater-than"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-lg-4">
+          <div class="card shadow" style="width: 21rem;">
+            <img src="https://citygov.ancorathemes.com/wp-content/uploads/2016/01/img_news2-370x190.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="time d-flex">
+                <h5><span class="badge" id="month1"></span></h5>
+                <h5><span class="badge" id="date1"></span></h5>
+                <h5><span class="badge" id="year1"></span></h5>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#">READ MORE <i class="fa-solid fa-greater-than"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-lg-4">
+          <div class="card shadow" style="width: 21rem;">
+            <img src="https://citygov.ancorathemes.com/wp-content/uploads/2016/01/img_news3-370x190.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="time d-flex">
+                <h5><span class="badge" id="month2"></span></h5>
+                <h5><span class="badge" id="date2"></span></h5>
+                <h5><span class="badge" id="year2"></span></h5>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#">READ MORE <i class="fa-solid fa-greater-than"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <a href="" class="btn  ">MORE NEWS</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="gallery">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="title">GALLERY</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="card">
+            <img src="https://citygov.ancorathemes.com/wp-content/uploads/2016/01/gallery-4.jpg" class="card-img-top"
+              alt="...">
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6 ">
+          <div class="card">
+            <img src="https://citygov.ancorathemes.com/wp-content/uploads/2016/01/gallery-5.jpg" class="card-img-top"
+              alt="...">
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6 ">
+          <div class="card">
+            <img src="https://citygov.ancorathemes.com/wp-content/uploads/2016/01/gallery-3.jpg" class="card-img-top"
+              alt="...">
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6 ">
+          <div class="card">
+            <img src="https://citygov.ancorathemes.com/wp-content/uploads/2016/01/gallery-6.jpg" class="card-img-top"
+              alt="...">
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6 ">
+          <div class="card">
+            <img src="https://citygov.ancorathemes.com/wp-content/uploads/2016/01/gallery-2.jpg" class="card-img-top"
+              alt="...">
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6 ">
+          <div class="card">
+            <img src="https://citygov.ancorathemes.com/wp-content/uploads/2016/01/gallery-1.jpg" class="card-img-top"
+              alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="info">
+    <div class="container">
+      <h1 class="title text-center">FIND MORE INFORMATION</h1>
+      <h4 class="title text-center">Download City Guide</h4>
+      <div class="store">
+        <span class="apple"><i class="fa-brands fa-apple"></i> APPLE STORE</span>
+        <span><i class="fa-brands fa-google-play"></i> GOOGLE PLAY</span>
+      </div>
+      <div class="img">
+        <img src="https://citygov.ancorathemes.com/wp-content/uploads/2016/01/smartphone-icon.png" alt="">
+
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="s-channels">
+      <div class="container">
+        <div class=" content d-flex justify-content-between">
+          <h1 class="title">Welcome to Your Opportunity to Reinvent the World!</h1>
+          <i class="fa-solid fa-thumbs-up"></i>
+          <div class="button">
+            <button class="btn">FIND SOCIALS CHANNELS</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row end">
+        <div class="col-md-6 col-lg-3 mb-5">
+          <div class="logo">
+            <img src="https://citygov.ancorathemes.com/wp-content/uploads/2016/01/footer-icon.png" alt="">
+            <p>City.gov is one of the best government sites on the market. Discover our multiple awards and
+              recognitions.</p>
+            <p>You are always welcome in our city! Please visit us and enjoy!</p>
+            <div class="icon d-flex justify-content-around">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-square-x-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 blog mb-5">
+          <h4 class="title">Blogs</h4>
+          <div class="row">
+            <div class="content d-flex align-middle">
+              <img src="https://citygov.ancorathemes.com/wp-content/uploads/2016/01/img4-170x170.jpg" alt="">
+              <ul>
+                <li>Entertainment</li>
+                <li>More ></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="content d-flex align-middle">
+              <img src="https://citygov.ancorathemes.com/wp-content/uploads/2016/01/img_news3-170x170.jpg" alt="">
+              <ul>
+                <li>Entertainment</li>
+                <li>More ></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="content d-flex align-middle">
+              <img src="https://citygov.ancorathemes.com/wp-content/uploads/2016/01/img_news2-170x170.jpg" alt="">
+              <ul>
+                <li>Entertainment</li>
+                <li>More ></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-5">
+          <h4 class="title">Links</h4>
+          <div class="link d-flex flex-column">
+            <span>> Online services</span>
+            <span>> Residents</span>
+            <span>> Buisness</span>
+            <span>> Government</span>
+            <span>> Visiting</span>
+            <span>> Employment</span>
+            <span>> Education</span>
+          </div>
+
+        </div>
+        <div class="col-md-6 col-lg-3 mb-5">
+          <h4 class="title">Sign Up</h4>
+          <span>Signup to receive notifications</span>
+          <div class="form">
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+            <input type="submit" class="btn" value="SEND">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="gsap.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

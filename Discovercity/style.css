@@ -1,0 +1,716 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  position: sticky;
+  top: -50px;
+  z-index: 999;
+}
+#sidenav{
+    height: 100vh;
+    width: 30vh;
+    background-color: #053775c8;
+    position:absolute;
+    left: 0;
+    color: white;
+    backdrop-filter: blur(8px);
+}
+#sidenav .close{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cc123f;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: -15px;
+    font-size: 20px;
+}
+#sidenav ul{
+    margin-top: 80px;
+}
+#sidenav ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 15px 0;
+}
+#first {
+  width: 100%;
+  background-color: #104382;
+}
+#first .container {
+  color: white;
+  display: flex;
+}
+.left-content h6 {
+  margin-right: 20px;
+  font-size: 85%;
+}
+#main {
+  padding: 30px 0;
+  background-color: white;
+}
+#main button {
+  border: none;
+  background-color: transparent;
+  margin: 0 10px;
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+}
+#main form {
+  position: relative;
+  width: 150px;
+}
+#main input {
+  padding-left: 30px;
+}
+#menutoggle {
+  display: none;
+  float: right;
+}
+#main .logo {
+  height: 40px;
+}
+#main .logo span {
+  font-size: 10px;
+}
+#main .logo-txt {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 25px;
+}
+#main .logo::after {
+  content: "";
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.38);
+}
+#main ul {
+  margin: 0;
+  height: 5%;
+}
+#main li {
+  position: relative;
+  list-style: none;
+}
+
+#main .nav-item .d-menu {
+  height: auto;
+  width: 250px;
+  background-color: rgb(6, 111, 157);
+  position: absolute;
+  left: 0;
+  display: none;
+  opacity: 0;
+  /* transition: 0.5s; */
+  color: white;
+  z-index: 999;
+  padding: 10px;
+  margin: 0;
+}
+
+#main .nav-item .nav-link:hover + ul.d-menu,
+#main .nav-item .d-menu:hover {
+  display: block;
+  opacity: 1;
+}
+
+#main .nav-link {
+  color: black;
+  font-weight: bold;
+}
+#main .active {
+  color: #cc123f;
+}
+#main .active::after {
+  content: "";
+  height: 3px;
+  width: 90%;
+  background-color: #cc123f;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#main a {
+  position: relative;
+}
+#main .non-active::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background-color: #cc123f;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+#main .non-active:hover::after {
+  width: 100%;
+}
+#main .nav-link:hover {
+  color: #cc123f;
+}
+
+#home {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://wallpapers.com/images/hd/beautiful-facade-hawa-mahal-jaipur-jyve6dza8i2esdk4.jpg");
+  background-size: cover;
+  margin-bottom: 50px;
+}
+#home .content {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.671);
+}
+#home .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+}
+#home .content h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0 10px;
+}
+#home .content h3 {
+  font-family: cursive;
+  text-align: center;
+}
+#home #rightbox {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 10;
+}
+#home .right-box {
+  position: absolute;
+  right: 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+#home .right-box .box {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(7, 102, 175);
+  margin: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  position: relative;
+  z-index: 10;
+  float: right;
+  transition: 0.2s;
+}
+#home .right-box .first:hover {
+  transform: scaleX(1.5);
+}
+#home .right-box .sec:hover {
+  transform: scaleX(1.5);
+}
+#home .right-box .third:hover {
+  transform: scaleX(1.5);
+}
+#home .right-box .box::before {
+  content: "BUY THEME";
+  height: 50px;
+  width: 100px;
+  background-color: #202b37;
+  position: absolute;
+  left: -100px;
+  top: 0px;
+  z-index: 1;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+#home .right-box .sec::before {
+  content: "OUR BESTSELLER";
+  font-size: 10px;
+}
+#home .right-box .third::before {
+  content: "HIDE PANEL";
+  font-size: 10px;
+}
+
+#home .right-box .box:hover::before {
+  opacity: 1;
+}
+/* #home #rightbox .right-box .box:hover{
+} */
+#home .bottom {
+  width: 100%;
+  max-height: 30%;
+  padding: 40px 0;
+  background-color: #cc124090;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+#home .info h1 {
+  font-size: 40px;
+}
+#home .info {
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 10px; */
+  text-align: center;
+}
+#home .info::after {
+  content: "";
+  width: 2px;
+  background-color: rgba(0, 0, 0, 0.222);
+}
+#city{
+  position: relative;
+}
+#city .up-page{
+  width: 50px;
+  height: 50px;
+  background-color: #053775;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  position:fixed;
+  right: 20px;
+  top: 90%;
+  z-index: 1;
+}
+#city .up-page a{
+  color: white;
+
+}
+#city h4 {
+  font-family: cursive;
+  color: #cc123f;
+}
+#city .tiTle {
+  margin: 0 auto 5% auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.underline {
+  width: 70px;
+  height: 2px;
+  background-color: #cc123f;
+  margin: 5px auto 20px auto;
+}
+#city .card {
+  margin: 0 auto;
+  border: none;
+}
+#city .card-body {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+#city .card-body .card-title {
+  color: #cc123f;
+}
+#city .card-body .trans-box {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  position: absolute;
+  top: -10px;
+  right: 40%;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+#city .card a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #cc123f;
+}
+#city .button {
+  margin: 10% 0 10px 0;
+  text-align: center;
+}
+#city .button button {
+  text-decoration: none;
+  background-color: #cc123f;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #cc123f;
+  font-size: 12px;
+  transition: 0.5s;
+}
+#city .button button:hover {
+  background-color: transparent;
+  color: #cc123f;
+}
+#city .latest {
+  width: 100%;
+  height: auto;
+  background-color: #104382;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+#city .latest h6 {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+#city .latest .content {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin: 0 auto;
+  color: white;
+  padding: 100px 0;
+  font-size: 25px;
+  position: relative;
+  z-index: 1;
+}
+#city .latest .content img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+#city .latest .content p {
+  position: relative;
+}
+#city .latest .content p::before {
+  content: '"';
+  font-family: monospace;
+  font-size: 15rem;
+  position: absolute;
+  left: -80px;
+  top: -120px;
+  color: rgba(255, 255, 255, 0.165);
+  z-index: 0;
+}
+#discover {
+  width: 100%;
+  height: auto;
+  background-image: url("https://citygov.ancorathemes.com/wp-content/uploads/2016/01/bg_08.jpg?id=363");
+  color: white;
+  padding: 50px 0;
+  position: relative;
+  z-index: 0;
+}
+#discover h1 {
+  margin-bottom: 5%;
+}
+#discover .card {
+  margin: 0 auto;
+  border: none;
+}
+#discover .card-body {
+  text-align: center;
+  position: relative;
+  background-color: #cc123f;
+  z-index: 1;
+}
+#discover .card-body p {
+  font-size: 20px;
+  text-align: center;
+}
+#discover .card-body .trans-box {
+  height: 50px;
+  width: 50px;
+  background-color: #cc123f;
+  position: absolute;
+  top: -10px;
+  right: 40%;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+#discover .card a {
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+}
+#discover h6 {
+  margin-top: 8%;
+}
+#discover h6 a {
+  color: white;
+  text-decoration: none;
+}
+#service {
+  margin: 100px 0;
+  position: relative;
+}
+#service .card {
+  border: none;
+  position: relative;
+  z-index: -1;
+}
+#service .card-body .hover-btn {
+  position: relative;
+  z-index: 10;
+  cursor: pointer !important;
+}
+#service .card-body .hover-btn .btn-1 {
+  height: 50px;
+  width: 200px;
+  background-color: #104382;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  cursor: pointer;
+}
+#service .card-body .hover-btn .btn-2 {
+  height: 50px;
+  width: 200px;
+  background-color: whitesmoke;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/* #service .card-body .hover-btn .btn-2 .trans{
+  opacity: 0;
+}
+
+#service .card-body .hover-btn .btn-2:hover {
+  background-color: #104382;
+  color: white;
+}
+
+#service .card-body .hover-btn .btn-2:hover .trans {
+  opacity: 1;
+} */
+
+#service .card-body .hover-btn .trans {
+  height: 20px;
+  width: 20px;
+  background-color: #104382;
+  position: absolute;
+  left: 30px;
+  bottom: -8px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+#service .card-body .link-part {
+  margin-top: 50px;
+}
+#service .card-body .link-part ul li {
+  list-style: none;
+  padding: 2px 0;
+}
+#service .card-body .link-part ul li span {
+  color: #cc123f;
+  font-family: cursive;
+}
+#service .card-body a {
+  font-size: 12px;
+  color: #cc123f;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+#service .img {
+  width: 100%;
+  height: 400px;
+  background-color: black;
+  background-image: url("https://www.timpeter.com/wp-content/uploads/2015/01/mobile-commerce.jpg");
+  background-size: cover;
+}
+#news {
+  background-color: #e5e8e8;
+  margin: 100px 0;
+  padding: 50px 0;
+  position: relative;
+  z-index: 0;
+}
+#news h1 {
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 999;
+}
+#news .card {
+  margin: 0 auto;
+  border: none;
+  position: relative;
+  z-index: 1;
+}
+#news .card-body {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+#news .card-body .card-title {
+  color: #cc123f;
+}
+#news .card-body p:hover {
+  color: #cc123f;
+  transition: 0.2s;
+}
+#news .card-body .time {
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+}
+#news .card-body h5 span {
+  background-color: #cc123f;
+}
+#news .card a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #cc123f;
+}
+
+#news .btn {
+  margin-top: 50px;
+  background-color: #cc123f;
+  color: white;
+  font-size: 13px;
+  border: 2px solid #cc123f;
+  transition: 0.3s;
+  padding: 5 20px;
+}
+#news .btn:hover {
+  background-color: transparent;
+  color: black;
+}
+#gallery {
+  width: 100%;
+}
+
+#gallery .card {
+  border: none;
+  margin-bottom: 20px;
+}
+#gallery .card img {
+  height: 100%;
+}
+#info {
+  width: 100%;
+  background-image: url("https://citygov.ancorathemes.com/wp-content/uploads/2016/01/bg_team.jpg?id=326");
+  background-size: cover;
+  color: white;
+  padding: 50px 0 0 0;
+  overflow-x: hidden;
+}
+#info .store {
+  text-align: center;
+  font-size: 15px;
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+}
+#info .store i {
+  font-size: 30px;
+  padding: 0 10px;
+}
+#info .store span {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+#info .img {
+  display: flex;
+  justify-content: center;
+}
+#info .img img {
+  width: 400px;
+}
+footer {
+  background-color: #053775;
+  padding-bottom: 20px;
+  color: white;
+}
+footer .s-channels {
+  background-color: #2878ad;
+  color: white;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px 0;
+}
+footer .s-channels .content {
+  position: relative;
+  text-align: center;
+}
+footer .s-channels .content i {
+  position: absolute;
+  font-size: 70px;
+  top: -15px;
+  left: 100px;
+  color: rgba(255, 255, 255, 0.367);
+}
+
+footer .s-channels .btn {
+  background-color: #cc123f;
+  color: white;
+
+  font-size: 12px;
+  padding: 15px 5px;
+  border: 2px solid #cc123f;
+  transition: 0.3s;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+footer .s-channels .btn:hover {
+  background-color: transparent;
+}
+footer .end p {
+  margin: 20px 0 30px 0;
+}
+footer .end .icon {
+  width: 80%;
+  font-size: 20px;
+  color: gray;
+}
+footer .end .blog .row {
+  margin: 20px 0;
+}
+footer .end .content {
+  height: 70px;
+  padding: 10px;
+}
+footer .end img {
+  width: 80px;
+}
+footer .end .blog ul li {
+  list-style: none;
+  margin: 0 0 10px 0;
+}
+footer .end .link span {
+  padding: 10px 0;
+}
+footer .end .form {
+  margin: 30px 0 0 0;
+  position: relative;
+}
+footer .end .form input[type=text]{
+    padding: 9px;
+}
+footer .end .form .btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #cc123f;
+  color: white;
+  font-size: 13px;
+  margin: 5px;
+}
