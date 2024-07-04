@@ -6,7 +6,10 @@
 
 /* / Desktop 1280px   / */
 @media (max-width: 1200px) {
-    
+    #design ._right .img2{
+        width: 100%;
+        height: 635px;
+    }
 }
 
 /* / iPad 1024px   / */
@@ -23,11 +26,19 @@
 }
 
 /* / iPad 991px   / */
-@media (max-width: 991px) {
+@media (max-width: 991.5px) {
     #home .content{
         text-align: center;
         background-color: rgba(255, 255, 255, 0.543);
         backdrop-filter: blur(5px);
+    }
+    #design ._right .img2{
+        width: 100%;
+        height: 510px;
+    }
+    #design ._hover .add{
+        height: 70px;
+        width: 70px;
     }
 }
 
@@ -39,14 +50,32 @@
     #innovate img{
         width:300px;
     }
+    #design ._right .img2{
+        width: 100%;
+        height: 442px;
+    }
+    #design ._hover .add{
+        height: 50px;
+        width: 50px;
+    }
+    footer .info{
+        margin-top:40%;
+      }
     
 }
-@media (max-width:575px){
+@media (max-width:575.5px){
     #product img{
         width: 40%;
         margin: 0 30%;
     }
-    
+    #design ._right .img2{
+        width: 100%;
+        height:100%;
+    }
+    #design ._hover .add{
+        height: 80px;
+        width: 80px;
+    }
 }
 /* / Iphone 567px   / */
 @media (max-width: 567px) {
