@@ -40,3 +40,17 @@ setInterval(()=>{
 
 
 },1000)
+
+var swiper = new Swiper(" #home .mySwiper", {
+    cssMode: true,
+    autoplay:true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    // pagination: {
+    //   el: ".swiper-pagination",
+    // },
+    mousewheel: true,
+    keyboard: true,
+  });
