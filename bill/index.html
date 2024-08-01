@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6d37effa6c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card mt-5 shadow">
+                    <div class="card-body">
+                        <div class="head ">
+                            <div class="left ">
+                                <img src="https://st3.depositphotos.com/43745012/44906/i/450/depositphotos_449066958-stock-photo-financial-accounting-logo-financial-logo.jpg" alt="">
+                                <div class="detail">
+                                    <h4 >Mari company</h4>
+                                    <span>Rajkot,Gujarat</span>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <h4>INVOICE</h4>
+                                <div class="date">
+                                    <span id="date"></span>
+                                    <span id="month"></span>
+                                    <span id="year">2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="additem">
+                            <span>Add Items</span>
+                            <button type="button" class="btn btn-primary" onclick="add()" id="add"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <div class="content">
+                            <table class="table table-bordered" id="table">
+                                <thead class="table-dark">
+                                 <tr>
+                                    <td>Discription</td>
+                                    <td>Qty</td>
+                                    <td>Price</td>
+                                    <td>Total</td>
+                                    <td>enter</td>
+                                 </tr>
+                                </thead>
+                                <tbody id="tbody">
+                                     
+                                </tbody>
+    
+                              </table>
+                        </div>
+                        
+                          <table class="table table-bordered" id="finalresult">
+                            <thead class="table-dark" >
+                                <tr>
+                                   <td>GST</td>
+                                   <td>Select GST</td>
+                                   <td>Total amount</td>
+                                   <td >Final price</td>
+                                   <td>enter</td>
+                                </tr>
+                               </thead>
+                               <tbody>
+                                <tr>
+                                    <td colspan="1">Subtotal</td>
+                                    <td> <select  class="form-select w-100" id="gst" >
+                                       <option value="6">6%</option>
+                                       <option value="12">12%</option>
+                                       <option value="28">28%</option>
+                                      </select></td>
+                                    <td id="totalamount"></td>
+                                    <td id="subtotal"></td>
+                                    <td><button class="btn btn-warning" onclick="total()">Total</button></td>
+                                  </tr>
+                               </tbody>
+                          </table>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
