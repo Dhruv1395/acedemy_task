@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+
+}
+section{
+    padding: 50px 0;
+    height: 70vh;
+    width: 100%;
+
+}
+#contact{
+    height:30vh;
+    width: 100%;
+    background-color: #2e4053;
+    position: relative;
+    margin: 0;
+}
+#contact .container{
+    position: relative;
+    display: flex;
+    justify-content:center ;
+}
+#contact .contact{
+    position: absolute;
+    background-color: white;
+    width: 90%;
+    padding: 20px;
+    top: -220px;
+    border-radius: 5px;
+}
+
+#contact .contact button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+#contact .contact input{
+    padding: 10px;
+}
+table{
+    max-width: 100%;
+}
+table td{
+    text-align: center;
+    
+}
