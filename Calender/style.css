@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -42,15 +43,32 @@ body{
 .calender .display{
     display: flex;
     flex-wrap: wrap;
+   
 }
 .calender .display .cell{
     width: 14.28%;
     text-align: center;
     padding: 5px;
-    background-color: #fbfeff;
+    border: none;
 }
-.active{
+.calender .display .cell .digit{
+    border-radius: 50%;
+    width: 35px;
+    padding: 5px;
+    margin:0px auto;
+    font-family: "Roboto Condensed", sans-serif;}
+.activee{
     background-color: #1d88f9 !important;
     color:white;
     border-radius: 5px;
+}
+#prev,#next{
+    padding:8px;
+    border-radius: 50%;
+    transition: 0.2s;
+  
+}
+#prev:hover,#next:hover{
+    background-color: white;
+    color: #1d88f9;
 }
