@@ -1,68 +1,71 @@
-document.addEventListener('DOMContentLoaded',function(){
-let prevbtn = document.getElementById('prev');
-let nextbtn = document.getElementById('next');
-let Cyear = new Date().getFullYear();
-const months = ["January","February","March","April","May","June","July","Augest","September","October","November","December"];
-let Cmonth = new Date().getMonth();
-let Cdate = new Date().getDate();
-console.log(Cdate);
+document.addEventListener("DOMContentLoaded", function () {
+  let prevbtn = document.getElementById("prev");
+  let nextbtn = document.getElementById("next");
+  let Cyear = new Date().getFullYear();
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "Augest",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  let Cmonth = new Date().getMonth();
+  let Cdate = new Date().getDate();
 
+  function renderer(month, year) {
+    const firstDay = new Date(year, month, 1).getDay();
 
+    let currentmonth = new Date(year, month + 1, 0).getDate();
 
-function renderer(month,year){
-const firstDay = new Date(year, month, 1).getDay();
-
-let currentmonth = new Date(year,month+1,0).getDate();
-
-document.getElementById('monthyear').textContent=months[month] +" "+year;
-let display = document.getElementById('display');
-display.innerHTML='';
-for(let i=0;i<firstDay;i++){
-    display.innerHTML+=`<div class='cell'></div>`
-}
-for(let i=1;i <= currentmonth;i++){
-    display.innerHTML+=`<div class='cell'>${i}</div>`
-
-}
-
-}
-let cell=document.getElementsByClassName('cell');
-let cm =  months[new Date().getMonth()];   
-Array.from(cell).forEach((date)=>{
-let cellDay = parseInt(date.textContent);
-    if(cellDay==Cdate && cm==months[new Date().getMonth()]){
+    let pmonth =document.getElementById("month").textContent =
+      months[month];
+      document.getElementById("year").textContent =year;
+    let display = document.getElementById("display");
+    display.innerHTML = "";
+    let presentmonth = months[new Date().getMonth()];
+    
+    for (let i = 0; i < firstDay; i++) {
+      display.innerHTML += `<div class='cell'></div>`;
     }
-    else{
-        date.classList.add("active");
+    for (let i = 1; i <= currentmonth; i++) {
+      display.innerHTML += `<div class='cell' ><div class='digit shadow '  month='${presentmonth}' >${i}</div></div>`;
+    }
+    let cell = document.getElementsByClassName('digit');
 
+  Array.from(cell).forEach((date) => {
+    let month = date.getAttribute('month');
+    
+    if (date.textContent == Cdate && month == pmonth ) {
+      date.classList.add("activee");
     }
-}
-)
-prevbtn.addEventListener('click',function(){
-    if(Cmonth===0){
-        Cmonth=11;
-        Cyear-=1
+  });
+  }
+  
+  prevbtn.addEventListener("click", function () {
+    if (Cmonth === 0) {
+      Cmonth = 11;
+      Cyear -= 1;
+    } else {
+      Cmonth -= 1;
     }
-    else{
-        Cmonth-=1;
-        
+    renderer(Cmonth, Cyear);
+  });
+
+  nextbtn.addEventListener("click", function () {
+    if (Cmonth === 11) {
+      Cmonth = 0;
+      Cyear += 1;
+    } else {
+      Cmonth += 1;
     }
-    renderer(Cmonth,Cyear);
+    renderer(Cmonth, Cyear);
+  });
+  renderer(Cmonth, Cyear);
 });
-
-nextbtn.addEventListener('click',function(){
-    if(Cmonth===11){
-        Cmonth=0;
-        Cyear+=1;
-    }
-    else{
-        Cmonth+=1;
-    }
-    renderer(Cmonth,Cyear);
-
-})
-renderer(Cmonth,Cyear);
-
-})
-
-
