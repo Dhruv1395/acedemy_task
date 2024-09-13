@@ -14,7 +14,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -53,7 +53,7 @@
                     <div class="right-part">
                         <span><i class="fa-regular fa-user"></i></span>
                         <span><i class="fa-regular fa-heart"></i></span>
-                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        <span><i class="fa-solid fa-cart-shopping" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i><sup id="count">0</sup></span>
                     </div>
                     
                 </div>
@@ -104,6 +104,37 @@
   <!-- Swiper JS -->
     </section>
     <section id="main">
+        <!-- pop-up -->
+        
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-bordered">
+            <thead>
+                <th>Product</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </thead>
+            <tbody id="cartdata">
+
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" >Add Items</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        <!-- pop-up -->
         <div class="container">
             <div class="row main-flex" >
                 <div class="col-md-4">
@@ -152,7 +183,6 @@
                                     <option value="prize">Prize</option>
                                 </select>
                                 <button type="button" class="btn btn-danger" onclick="del()" id="del">Delete</button>
-
                             </div>
                         </div>
                     </div>
