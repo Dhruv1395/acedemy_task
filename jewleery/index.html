@@ -13,8 +13,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,7 +24,7 @@
         <div class="nav-second ">
             <nav class="navbar navbar-light shadow">
                 <div class="container d-flex">
-                    <div class="menu-toggle" id="t-menu" >
+                    <div class="menu-toggle" id="t-menu">
                         <span onclick="menuToggle()" id="open"><i class="fa-solid fa-bars"></i></span>
                         <span onclick="menucls()" id="cls"><i class="fa-solid fa-xmark"></i></span>
                     </div>
@@ -53,92 +55,100 @@
                     <div class="right-part">
                         <span><i class="fa-regular fa-user"></i></span>
                         <span><i class="fa-regular fa-heart"></i></span>
-                        <span><i class="fa-solid fa-cart-shopping" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i><sup id="count">0</sup></span>
+                        <span><i class="fa-solid fa-cart-shopping" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop"></i><sup id="count">0</sup></span>
                     </div>
-                    
+
                 </div>
             </nav>
         </div>
     </header>
     <div class="sidebar shadow" id="sidebar">
-            <div class="row">
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <span id="s_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-                </form>
-            </div>
-            <div class="row mt-4">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">Pages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        
+        <div class="row">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <span id="s_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </form>
+        </div>
+        <div class="row mt-4">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Pages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+
     </div>
     <section id="navigate">
-         <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="s1.png" alt=""></div>
-      <div class="swiper-slide"><img src="s2.png" alt=""></div>
-      <div class="swiper-slide"><img src="s3.png" alt=""></div>
-     
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="s1.png" alt=""></div>
+                <div class="swiper-slide"><img src="s2.png" alt=""></div>
+                <div class="swiper-slide"><img src="s3.png" alt=""></div>
 
-  <!-- Swiper JS -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Swiper JS -->
     </section>
     <section id="main">
         <!-- pop-up -->
-        
-  
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <table class="table table-bordered">
-            <thead>
-                <th>Product</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Quantity</th>
-            </thead>
-            <tbody id="cartdata">
 
-            </tbody>
-          </table>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <th>Product</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th>Remove</th>
+                            </thead>
+                            <tbody id="cartdata">
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="details">
+                        <h5 class="title ">Grand Total:<span class="totals"></span></h5>
+                        </div>
+                       <button type="button" class="btn btn-warning" onclick="total()">Total</button>
+
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-warning" >Add Items</button>
-        </div>
-      </div>
-    </div>
-  </div>
-        <!-- pop-up -->
+        <!-- Modal end-->
         <div class="container">
-            <div class="row main-flex" >
+            <div class="row main-flex">
                 <div class="col-md-4">
-                    <div class="row mt-5" >
+                    <div class="row mt-5">
                         <h3 class="title w-75" style="border-bottom: 1px solid black;padding: 5px ;">Categories</h3>
                     </div>
                     <div class="row">
@@ -153,7 +163,7 @@
                             <li>Neckleces</li>
                             <li>Shoe Bucle</li>
                             <li>Tv stands</li>
-                            
+
                         </ul>
                     </div>
                     <div class="row">
@@ -162,7 +172,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-8">
                     <div class="row ">
                         <div class="menu">
@@ -189,18 +199,19 @@
                     <div class="items">
                         <div class="row mt-4 data shadow" id="data">
                             <!-- product display here  -->
-                    </div>
+                        </div>
 
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-6 col-lg-3 mb-4">
                     <img src="logo_corano.png" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolores aspernatur optio nesciunt ex perferendis ab ad mollitia itaque nam, </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolores aspernatur optio
+                        nesciunt ex perferendis ab ad mollitia itaque nam, </p>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3 mb-4">
                     <h5 class="title">Contact Us</h5>
