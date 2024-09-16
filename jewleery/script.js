@@ -118,7 +118,7 @@ function lessdetail() {
                   <i class="fa-solid fa-repeat shadow"></i>
                   <i class="fa-solid fa-magnifying-glass shadow"></i>
                 </div>
-                <button type="button" class="btn shadow fw-bold" onclick="addcount(${index})" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Add to cart</button>
+                <button type="button" class="btn shadow fw-bold" onclick="addcount(${index})" >Add to cart</button>
                    <div class="card-body">
                     <img src="${item.img}" alt="">
                     <h5 class="card-title text-center">${item.name}</h5>
@@ -200,25 +200,67 @@ function addcount(index) {
   document.getElementById("count").innerHTML = inc;
   // debugger;
   cartindex.push(index);
-
   let additems = items.filter((item, ind) => cartindex.includes(ind));
+
+
 
   cart(additems);
 }
 let cart = (additems) => {
-  let item = (document.getElementById("cartdata").innerHTML = additems
+  document.getElementById("cartdata").innerHTML = additems
     .map((items, ind) => {
+     
       return `
           <tr>
               <td><img src="${items.img}"></td>
-              <td>${items.name}</td>
-              <td>${items.price}</td>
-              <td> <input type="number" class="form-control" placeholder="0" value="1" min="1" style="width:50px;"></td>
+              <td class="item-name">${items.name}</td>
+              <td><span class="item-price">${items.price}</span></td>
+              <td> <input type="number" class="form-control qty"  placeholder="0"  value="0" min="1" style="width:50px;" onchange="qty()"></td>
+              <td class="total"  id="qty-${ind}"></td>
+              <td><button type="button" class="btn btn-danger" onclick="remove(${ind})">Remove</button></td>
           </tr>
         `;
-    })
-    .join(" "));
+
+    }).join(" "); 
+   
 };
+function qty() {
+  let quantities = document.querySelectorAll(".qty");
+  let prices = document.querySelectorAll(".item-price");
+  let totals = document.querySelectorAll(".total");
+
+  quantities.forEach((input, index) => {
+    let quantity = parseFloat(input.value);
+    let price = parseFloat(prices[index].textContent);
+    let total = quantity * price;
+
+    totals[index].textContent = `${total}`;
+  });
+}
+
+
+
+function total(){
+  let totals = document.querySelectorAll(".total");
+  let ans = 0;
+  Array.from(totals).forEach(e =>{
+    document.querySelector(".totals").innerHTML = ans+=parseInt(e.textContent);
+    console.log(ans);
+    
+  })
+
+}
+function remove(index){
+  let counter = parseInt(document.getElementById("count").innerHTML);
+  let inc = counter -= 1;
+  document.getElementById("count").innerHTML = inc;
+  cartindex = cartindex.filter(ind=> ind !== cartindex[index]);
+  console.log(cartindex);
+  let additems = items.filter((item, ind) => cartindex.includes(ind));
+
+cart(additems);  
+
+}
 
 demo();
 // swiper
